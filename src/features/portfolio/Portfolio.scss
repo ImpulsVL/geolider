@@ -1,0 +1,83 @@
+.portfolio {
+    padding: 20px;
+
+    &--light {
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    &--dark {
+        background-color: #1a1a1a;
+        color: #f0f0f0;
+    }
+}
+
+.portfolio__skills {
+    margin-bottom: 30px;
+}
+
+.portfolio__skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.portfolio__skill-item {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+
+    .portfolio--light & {
+        background-color: #e0e0e0;
+    }
+
+    .portfolio--dark & {
+        background-color: #444;
+    }
+}
+
+.portfolio__skill-add {
+    display: flex;
+    gap: 10px;
+}
+
+.portfolio__skill-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+
+    .portfolio--dark & {
+        background-color: #333;
+        color: white;
+        border-color: #555;
+    }
+}
+
+.portfolio__add-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    .portfolio--light & {
+        background-color: #007bff;
+        color: white;
+
+        &:hover {
+            background-color: #0069d9;
+        }
+    }
+
+    .portfolio--dark & {
+        background-color: #0069d9;
+        color: white;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+}

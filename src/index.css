@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.dark button,
+.dark input,
+.dark textarea {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+/* Общие стили для кнопок */
+button {
+  transition: all 0.2s;
+}
+
+/* Общие стили для инпутов */
+input, textarea {
+  font-family: inherit;
+}
